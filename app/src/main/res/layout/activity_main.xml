@@ -27,7 +27,7 @@
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="315dp"
-        android:layout_height="31dp"
+        android:layout_height="48dp"
         android:layout_marginTop="348dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
@@ -44,24 +44,26 @@
         android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="24dp"
-        android:background="@color/primaryColor"
-        android:backgroundTint="#42C2FF"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundstylebutton"
+        android:onClick="clickLogInButton"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/textView_signIn"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="315dp"
-        android:layout_height="31dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/buttonNext"
-        tools:layout_editor_absoluteX="42dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
