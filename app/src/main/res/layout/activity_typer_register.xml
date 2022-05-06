@@ -30,6 +30,7 @@
         android:backgroundTint="@color/primaryColor"
         android:text="Siguiente"
         android:textColor="@color/white"
+        android:onClick="clickNextButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.854"
