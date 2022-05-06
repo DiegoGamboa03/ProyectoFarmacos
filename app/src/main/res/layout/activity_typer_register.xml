@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EFFFFD"
     tools:context=".registerActivities.typerRegisterActivity">
 
     <TextView
@@ -13,17 +14,36 @@
         android:layout_marginTop="72dp"
         android:text="¿Como quieres
         registrarte?"
+        android:textColor="#42C2FF"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/roundstylebutton"
+        android:backgroundTint="@color/primaryColor"
+        android:text="Siguiente"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.88" />
+
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="413dp"
-        android:layout_height="28dp"
-        android:layout_marginBottom="232dp"
-        android:entries="hola, llaaaa"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/roundstyle"
+        android:entries="@array/UserType"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
