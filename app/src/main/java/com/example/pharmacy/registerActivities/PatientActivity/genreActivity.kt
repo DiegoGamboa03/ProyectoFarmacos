@@ -1,26 +1,25 @@
-package com.example.pharmacy.registerActivities
+package com.example.pharmacy.registerActivities.PatientActivity
 
 import android.content.Intent
-import com.example.pharmacy.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Spinner
 import android.widget.Toast
+import com.example.pharmacy.R
+import com.example.pharmacy.registerActivities.nameRegisterActivity
 
-class typerRegisterActivity : AppCompatActivity() {
+class genreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_typer_register)
+        setContentView(R.layout.activity_genre)
     }
 
     fun clickNextButton(view: View) {
-        val spinner = findViewById<Spinner>(R.id.spinnerUserType)
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
             val intent = Intent(this, nameRegisterActivity::class.java)
             //Mandamos el tipo de usuario (Paciente o doctor) a la siguiente activity
-            intent.putExtra("UserType",spinner.selectedItem.toString())
             startActivity(intent)
         }
 
