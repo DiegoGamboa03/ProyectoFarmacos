@@ -7,10 +7,10 @@ import android.view.View
 import android.widget.Toast
 import com.example.pharmacy.R
 
-class genreActivity : AppCompatActivity() {
+class birthdateRegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_genre)
+        setContentView(R.layout.activity_birthdate_register)
     }
 
     fun clickNextButton(view: View) {
