@@ -16,7 +16,7 @@ class birthdateRegisterActivity : AppCompatActivity() {
     fun clickNextButton(view: View) {
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
-            val intent = Intent(this, birthdateRegisterActivity::class.java)
+            val intent = Intent(this, directionRegisterActivity::class.java)
             startActivity(intent)
         }
 
