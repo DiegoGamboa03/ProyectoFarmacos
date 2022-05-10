@@ -8,6 +8,32 @@
     tools:context=".registerActivities.PatientActivity.treatmentPlaceRegisterActivity">
 
     <TextView
+        android:id="@+id/circle20"
+        android:layout_width="265dp"
+        android:layout_height="249dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/circle18"
+        android:layout_width="265dp"
+        android:layout_height="249dp"
+        android:background="@drawable/circle"
+        tools:layout_editor_absoluteX="-47dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/circle19"
+        android:layout_width="265dp"
+        android:layout_height="249dp"
+        android:layout_marginStart="232dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
         android:id="@+id/textViewHospitalPlace"
         android:layout_width="212dp"
         android:layout_height="129dp"

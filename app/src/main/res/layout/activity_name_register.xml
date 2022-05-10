@@ -8,6 +8,24 @@
     tools:context=".registerActivities.nameRegisterActivity">
 
     <TextView
+        android:id="@+id/circle14"
+        android:layout_width="238dp"
+        android:layout_height="219dp"
+        android:layout_marginStart="192dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <TextView
+        android:id="@+id/circle15"
+        android:layout_width="238dp"
+        android:layout_height="219dp"
+        android:layout_marginEnd="196dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="226dp"
         android:layout_height="170dp"

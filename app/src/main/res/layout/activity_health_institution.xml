@@ -8,6 +8,32 @@
     tools:context=".registerActivities.doctorActivity.healthInstitutionActivity">
 
     <TextView
+        android:id="@+id/circle11"
+        android:layout_width="265dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="208dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <TextView
+        android:id="@+id/circle13"
+        android:layout_width="147dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="132dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/circle12"
+        android:layout_width="250dp"
+        android:layout_height="239dp"
+        android:background="@drawable/circle"
+        tools:layout_editor_absoluteX="-54dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
         android:id="@+id/textViewHealthInstitution"
         android:layout_width="220dp"
         android:layout_height="129dp"

@@ -8,6 +8,24 @@
     tools:context=".registerActivities.PatientActivity.birthdateRegisterActivity">
 
     <TextView
+        android:id="@+id/circle5"
+        android:layout_width="250dp"
+        android:layout_height="239dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/circle6"
+        android:layout_width="250dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="188dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <TextView
         android:id="@+id/textViewBirthdate"
         android:layout_width="137dp"
         android:layout_height="111dp"

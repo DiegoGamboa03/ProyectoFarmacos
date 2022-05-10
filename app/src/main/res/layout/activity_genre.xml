@@ -8,6 +8,24 @@
     tools:context=".registerActivities.PatientActivity.genreActivity">
 
     <TextView
+        android:id="@+id/circle9"
+        android:layout_width="250dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="200dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <TextView
+        android:id="@+id/circle10"
+        android:layout_width="250dp"
+        android:layout_height="239dp"
+        android:layout_marginEnd="228dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle9"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
         android:id="@+id/textViewGenre"
         android:layout_width="190dp"
         android:layout_height="84dp"
