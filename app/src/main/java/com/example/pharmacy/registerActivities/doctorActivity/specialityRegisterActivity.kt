@@ -1,4 +1,4 @@
-package com.example.pharmacy.registerActivities
+package com.example.pharmacy.registerActivities.doctorActivity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,10 +8,10 @@ import android.widget.Toast
 import com.example.pharmacy.MainActivity
 import com.example.pharmacy.R
 
-class PasswordRegisterActivity : AppCompatActivity() {
+class specialityRegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_password_register)
+        setContentView(R.layout.activity_speciality_register)
     }
 
     fun clickNextButton(view: View) {

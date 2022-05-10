@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pharmacy.R
 import com.example.pharmacy.registerActivities.PatientActivity.genreActivity
+import com.example.pharmacy.registerActivities.doctorActivity.specialityRegisterActivity
 
 
 class nameRegisterActivity : AppCompatActivity() {
@@ -27,7 +28,11 @@ class nameRegisterActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }else{//En caso de ser doctor
-
+            val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
+            buttonClick.setOnClickListener {
+                val intent = Intent(this, specialityRegisterActivity::class.java)
+                startActivity(intent)
+            }
         }
         Toast.makeText(applicationContext, "Remplazar por tu codigo", Toast.LENGTH_LONG)
             .show()

@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFFFFD"
-    tools:context=".registerActivities.PasswordRegisterActivity">
+
+    tools:context=".registerActivities.doctorActivity.specialityRegisterActivity">
 
     <TextView
         android:id="@+id/textViewPassword"
         android:layout_width="220dp"
         android:layout_height="129dp"
         android:layout_marginTop="52dp"
-        android:text="¿Cual quieres que sea tu contraseña?"
+        android:text="¿Cual es su area de especialidad?"
         android:textColor="@color/primaryColor"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         android:layout_marginBottom="52dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="Area de especialidad"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/buttonNext"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,4 +52,5 @@
         app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
