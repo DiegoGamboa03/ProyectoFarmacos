@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pharmacy">
         <activity
+            android:name=".registerActivities.doctorActivity.healthInstitutionActivity"
+            android:exported="false" />
+        <activity
             android:name=".registerActivities.doctorActivity.specialityRegisterActivity"
             android:exported="false" />
         <activity

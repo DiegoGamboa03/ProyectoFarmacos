@@ -8,16 +8,16 @@ import android.widget.Toast
 import com.example.pharmacy.MainActivity
 import com.example.pharmacy.R
 
-class specialityRegisterActivity : AppCompatActivity() {
+class healthInstitutionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_speciality_register)
+        setContentView(R.layout.activity_health_institution)
     }
 
     fun clickNextButton(view: View) {
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
-            val intent = Intent(this, healthInstitutionActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

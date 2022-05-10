@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFFFFD"
-    tools:context=".registerActivities.doctorActivity.specialityRegisterActivity">
+    tools:context=".registerActivities.doctorActivity.healthInstitutionActivity">
 
     <TextView
-        android:id="@+id/textViewSpeciality"
+        android:id="@+id/textViewHealthInstitution"
         android:layout_width="220dp"
         android:layout_height="129dp"
         android:layout_marginTop="52dp"
-        android:text="¿Cual es su area de especialidad?"
+        android:text="¿En que institucion de salud trabaja?"
         android:textColor="@color/primaryColor"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -22,19 +22,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextSpeciality"
+        android:id="@+id/editTextHealthInstitution"
         android:layout_width="292dp"
         android:layout_height="48dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
-        android:hint="Area de especialidad"
+        android:hint="Institucion de salud"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/buttonNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSpeciality"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHealthInstitution"
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -52,5 +52,6 @@
         app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
