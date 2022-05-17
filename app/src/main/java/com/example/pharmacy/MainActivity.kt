@@ -3,6 +3,8 @@ package com.example.pharmacy
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +27,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clickLogInButton(view: View) {
+        val buttonClick = findViewById<Button>(R.id.buttonNext)
+        buttonClick.setOnClickListener {
+            var editTextUsername = findViewById(R.id.editTextUsername) as EditText
+            if(editTextUsername.getText().toString().equals("d")){ //En caso de que sea doctor
+                val intent = Intent(this, DoctorPacientListActivity::class.java)
+                startActivity(intent)
+                Toast.makeText(applicationContext, "Remplazar por tu codigo", Toast.LENGTH_LONG)
+                    .show()
+            }else{ //En caso de que sea paciente
 
+            }
+        }
     }
     /* Forma alternativa
     fun sendMessage(view: View?) {
