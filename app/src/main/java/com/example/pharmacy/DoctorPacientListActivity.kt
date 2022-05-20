@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.pharmacy.registerActivities.PatientActivity.genreActivity
+import com.example.pharmacy.registerActivities.doctorActivity.specialityRegisterActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class DoctorPacientListActivity : AppCompatActivity() {
 
@@ -29,6 +32,20 @@ class DoctorPacientListActivity : AppCompatActivity() {
             val intent = Intent(this, PatientMedicines::class.java);
             intent.putExtra("position", position);
             this.startActivity(intent);
+        }
+
+        var floatingActionButton = findViewById<FloatingActionButton>(R.id.floatingActionButton2)
+
+    }
+
+    fun clickFloatingActionButton(view: View) {
+        //se recibe el tipo de usuario de la activity anterior
+
+        val floatingActionButton = findViewById<FloatingActionButton>(R.id.floatingActionButton2)
+        floatingActionButton.setOnClickListener {
+            val intent = Intent(this, NewPacient::class.java)
+            startActivity(intent)
+            Toast.makeText(applicationContext, "Remplazar por tu codigo", Toast.LENGTH_LONG).show()
         }
     }
 

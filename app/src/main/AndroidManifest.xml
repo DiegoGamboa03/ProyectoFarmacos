@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pharmacy">
         <activity
+            android:name=".NewPacient"
+            android:exported="false" />
+        <activity
             android:name=".PatientMedicines"
             android:exported="false" />
         <activity
