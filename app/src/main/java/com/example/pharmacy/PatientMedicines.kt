@@ -3,9 +3,11 @@ package com.example.pharmacy
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class PatientMedicines : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,17 @@ class PatientMedicines : AppCompatActivity() {
             val intent = Intent(this, PatientMedicines::class.java);
             intent.putExtra("position", position);
             this.startActivity(intent);
+        }
+    }
+
+    fun clickFloatingActionButton(view: View) {
+        //se recibe el tipo de usuario de la activity anterior
+
+        val floatingActionButton = findViewById<FloatingActionButton>(R.id.floatingActionButton3)
+        floatingActionButton.setOnClickListener {
+            val intent = Intent(this, NewMedicineForPacient::class.java)
+            startActivity(intent)
+            Toast.makeText(applicationContext, "Remplazar por tu codigo", Toast.LENGTH_LONG).show()
         }
     }
 }
