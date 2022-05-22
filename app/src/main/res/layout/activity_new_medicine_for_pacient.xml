@@ -21,7 +21,7 @@
         android:id="@+id/spinnerDose"
         android:layout_width="335dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/roundstyle"
         app:layout_constraintBottom_toTopOf="@+id/spinnerPresentation"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
         android:id="@+id/spinnerPresentation"
         android:layout_width="335dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/roundstyle"
         app:layout_constraintBottom_toTopOf="@+id/spinnerTakeFrecuency"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,22 +51,23 @@
         android:id="@+id/editTextDurationDate"
         android:layout_width="335dp"
         android:layout_height="59dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
         android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMedicationTime"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="478dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextMedicationTime"
         android:layout_width="335dp"
         android:layout_height="59dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
         android:inputType="time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDurationDate" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
