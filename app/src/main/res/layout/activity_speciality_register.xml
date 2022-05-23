@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textViewSpeciality"
-        android:layout_width="220dp"
-        android:layout_height="129dp"
+        android:layout_width="215dp"
+        android:layout_height="137dp"
         android:text="¿Cual es su area de especialidad?"
         android:textColor="@color/primaryColor"
         android:textSize="34sp"

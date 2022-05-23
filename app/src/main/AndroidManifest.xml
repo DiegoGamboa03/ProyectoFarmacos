@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pharmacy">
         <activity
+            android:name=".PatientMedicinesPatientView"
+            android:exported="false" />
+        <activity
             android:name=".NewMedicineForPacient"
             android:exported="false" />
         <activity
             android:name=".NewPacient"
             android:exported="false" />
         <activity
-            android:name=".PatientMedicines"
+            android:name=".PatientMedicinesDoctorView"
             android:exported="false" />
         <activity
             android:name=".DoctorPacientListActivity"

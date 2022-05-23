@@ -9,10 +9,10 @@ import android.widget.ListView
 import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class PatientMedicines : AppCompatActivity() {
+class PatientMedicinesDoctorView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_patient_medicines)
+        setContentView(R.layout.activity_patient_medicines_doctor_view)
         val position=intent.getStringExtra("position") // Variable que almacena la posicion en la lista de pacientes
 
         val arrayAdapter: ArrayAdapter<*>
@@ -29,7 +29,7 @@ class PatientMedicines : AppCompatActivity() {
         mListView.setOnItemClickListener { parent, view, position, id ->
 
             Toast.makeText(this, "Clicked item :"+" "+position, Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, PatientMedicines::class.java);
+            val intent = Intent(this, PatientMedicinesDoctorView::class.java);
             intent.putExtra("position", position);
             this.startActivity(intent);
         }

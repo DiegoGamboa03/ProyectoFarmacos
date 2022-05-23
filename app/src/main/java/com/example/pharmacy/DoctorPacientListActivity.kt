@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-import com.example.pharmacy.registerActivities.PatientActivity.genreActivity
-import com.example.pharmacy.registerActivities.doctorActivity.specialityRegisterActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class DoctorPacientListActivity : AppCompatActivity() {
@@ -29,7 +27,7 @@ class DoctorPacientListActivity : AppCompatActivity() {
         mListView.setOnItemClickListener { parent, view, position, id ->
 
             Toast.makeText(this, "Clicked item :"+" "+position,Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, PatientMedicines::class.java);
+            val intent = Intent(this, PatientMedicinesDoctorView::class.java);
             intent.putExtra("position", position);
             this.startActivity(intent);
         }
