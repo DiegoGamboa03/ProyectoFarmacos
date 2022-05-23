@@ -11,41 +11,52 @@
         android:id="@+id/circle11"
         android:layout_width="265dp"
         android:layout_height="246dp"
-        android:layout_marginStart="208dp"
         android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
 
     <TextView
         android:id="@+id/circle13"
         android:layout_width="147dp"
         android:layout_height="144dp"
-        android:layout_marginStart="132dp"
         android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="246dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543" />
 
     <TextView
         android:id="@+id/circle12"
-        android:layout_width="250dp"
-        android:layout_height="239dp"
+        android:layout_width="184dp"
+        android:layout_height="176dp"
         android:background="@drawable/circle"
-        tools:layout_editor_absoluteX="-54dp"
-        tools:layout_editor_absoluteY="246dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
 
     <TextView
         android:id="@+id/textViewHealthInstitution"
         android:layout_width="220dp"
         android:layout_height="129dp"
-        android:layout_marginTop="52dp"
         android:text="¿En que institucion de salud trabaja?"
         android:textColor="@color/primaryColor"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
 
     <EditText
         android:id="@+id/editTextHealthInstitution"

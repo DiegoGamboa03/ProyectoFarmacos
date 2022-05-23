@@ -11,33 +11,41 @@
         android:id="@+id/circle9"
         android:layout_width="250dp"
         android:layout_height="239dp"
-        android:layout_marginStart="200dp"
         android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="148dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
 
     <TextView
         android:id="@+id/circle10"
         android:layout_width="250dp"
         android:layout_height="239dp"
-        android:layout_marginEnd="232dp"
+        android:layout_marginEnd="72dp"
         android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/circle9"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
 
     <TextView
         android:id="@+id/textViewGenre"
         android:layout_width="190dp"
         android:layout_height="84dp"
-        android:layout_marginTop="72dp"
         android:text="¿Cual es su genero?"
         android:textColor="@color/primaryColor"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
 
     <Spinner
         android:id="@+id/spinnerGenre"

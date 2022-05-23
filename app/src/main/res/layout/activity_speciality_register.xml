@@ -11,15 +11,16 @@
         android:id="@+id/textViewSpeciality"
         android:layout_width="220dp"
         android:layout_height="129dp"
-        android:layout_marginTop="52dp"
         android:text="¿Cual es su area de especialidad?"
         android:textColor="@color/primaryColor"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
 
     <EditText
         android:id="@+id/editTextSpeciality"
@@ -41,7 +42,7 @@
         android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/roundstylebutton"
         android:backgroundTint="@color/primaryColor"
         android:onClick="clickNextButton"
@@ -49,26 +50,31 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.783"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/circle1"
         android:layout_width="250dp"
         android:layout_height="239dp"
-        android:layout_marginTop="12dp"
         android:background="@drawable/circle"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSpeciality"
-        tools:layout_editor_absoluteX="-32dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
 
     <TextView
         android:id="@+id/circle"
         android:layout_width="245dp"
         android:layout_height="233dp"
-        android:layout_marginTop="84dp"
         android:background="@drawable/circle"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSpeciality"
-        tools:layout_editor_absoluteX="184dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
