@@ -8,6 +8,30 @@
     tools:context=".NewMedicineForPacient">
 
     <Spinner
+        android:id="@+id/spinnerPresentation"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundstyle"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerTakeFrecuency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <Spinner
+        android:id="@+id/spinnerDose"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundstyle"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPresentation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
         android:id="@+id/spinnerMedicine"
         android:layout_width="335dp"
         android:layout_height="59dp"
@@ -15,25 +39,31 @@
         app:layout_constraintBottom_toTopOf="@+id/spinnerDose"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewAssignMedicine" />
+
+    <TextView
+        android:id="@+id/textViewNewAssignMedicine"
+        android:layout_width="363dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:text="Medicamento a tomar"
+        android:textColor="@color/primaryColor"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/spinnerDose"
+    <EditText
+        android:id="@+id/editTextMedicationTime"
         android:layout_width="335dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/roundstyle"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerPresentation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Spinner
-        android:id="@+id/spinnerPresentation"
-        android:layout_width="335dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/roundstyle"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerTakeFrecuency"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -41,7 +71,7 @@
         android:id="@+id/spinnerTakeFrecuency"
         android:layout_width="335dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/roundstyle"
         app:layout_constraintBottom_toTopOf="@+id/editTextDurationDate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +81,7 @@
         android:id="@+id/editTextDurationDate"
         android:layout_width="335dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
         android:inputType="date"
@@ -59,15 +89,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextMedicationTime"
-        android:layout_width="335dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/roundstyle"
-        android:ems="10"
-        android:inputType="time"
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/roundstylebutton"
+        android:backgroundTint="@color/primaryColor"
+        android:onClick="clickNextButton"
+        android:text="Siguiente"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMedicationTime"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
