@@ -2,7 +2,7 @@
     <string name="app_name">Pharmacy</string>
     <string-array name="UserType">
         <item>Paciente</item>
-        <item>Doctor</item>
+        <item>Profesional de la salud</item>
     </string-array>
     <string-array name="Genre">
         <item>Masculino</item>
