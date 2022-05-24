@@ -36,7 +36,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Remplazar por tu codigo", Toast.LENGTH_LONG)
                     .show()
             }else{ //En caso de que sea paciente
-
+                val intent = Intent(this, PatientMedicinesPatientView::class.java)
+                startActivity(intent)
+                Toast.makeText(applicationContext, "Remplazar por tu codigo", Toast.LENGTH_LONG)
+                    .show()
             }
         }
     }
