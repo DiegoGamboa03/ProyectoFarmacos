@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.example.pharmacy.MainActivity
 import com.example.pharmacy.R
+import com.example.pharmacy.registerActivities.PasswordRegisterActivity
 
 class healthInstitutionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,7 @@ class healthInstitutionActivity : AppCompatActivity() {
     fun clickNextButton(view: View) {
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, PasswordRegisterActivity::class.java)
             startActivity(intent)
         }
 
