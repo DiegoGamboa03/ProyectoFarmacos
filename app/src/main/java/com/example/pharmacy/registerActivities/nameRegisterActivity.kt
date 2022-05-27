@@ -3,6 +3,7 @@ package com.example.pharmacy.registerActivities
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,12 +26,20 @@ class nameRegisterActivity : AppCompatActivity() {
             val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
             buttonClick.setOnClickListener {
                 val intent = Intent(this, genreActivity::class.java)
+                val cedula = findViewById<EditText>(R.id.editTextCedula).toString()
+                val nombre1 = findViewById<EditText>(R.id.editTextName2).toString()
+                val nombre2 = findViewById<EditText>(R.id.editTextSecondText).toString()
+                val apellido1 = findViewById<EditText>(R.id.editTextLastName).toString()
+                val apellido2 = findViewById<EditText>(R.id.editTextSecondSurname).toString()
+
+                val paciente = Pacientes()
                 startActivity(intent)
             }
         }else{//En caso de ser doctor
             val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
             buttonClick.setOnClickListener {
                 val intent = Intent(this, specialityRegisterActivity::class.java)
+
                 startActivity(intent)
             }
         }

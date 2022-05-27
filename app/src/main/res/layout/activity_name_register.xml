@@ -45,11 +45,13 @@
         app:layout_constraintVertical_bias="0.094" />
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/editTextCedula"
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:layout_marginTop="280dp"
+        android:autoText="false"
         android:background="@drawable/roundstyle"
+        android:editable="false"
         android:ems="10"
         android:hint="Cedula"
         android:inputType="textPersonName"
