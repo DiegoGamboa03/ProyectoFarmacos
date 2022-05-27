@@ -42,53 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
-
-    <EditText
-        android:id="@+id/editTextCedula"
-        android:layout_width="315dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="280dp"
-        android:autoText="false"
-        android:background="@drawable/roundstyle"
-        android:editable="false"
-        android:ems="10"
-        android:hint="Cedula"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/editTextName2"
-        android:layout_width="315dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/roundstyle"
-        android:ems="10"
-        android:hint="Nombre"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextSecondText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextLastName"
-        android:layout_width="315dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/roundstyle"
-        android:ems="10"
-        android:hint="Apellido"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextSecondSurname"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.028" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonNext"
@@ -111,7 +65,7 @@
         android:id="@+id/editTextSecondSurname"
         android:layout_width="315dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
         android:hint="Segundo Apellido"
@@ -122,15 +76,57 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+        android:id="@+id/editTextName2"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundstyle"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSecondText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCedula"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/roundstyle"
+        android:ems="10"
+        android:hint="Cédula"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSecondText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
         android:id="@+id/editTextSecondText"
         android:layout_width="315dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/roundstyle"
         android:ems="10"
         android:hint="Segundo Nombre"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/roundstyle"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSecondSurname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="parent" />

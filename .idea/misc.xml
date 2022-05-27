@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/ProyectoFarmacos/app/src/main/res/layout/activity_birthdate_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/ProyectoFarmacos/app/src/main/res/layout/activity_direction_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/ProyectoFarmacos/app/src/main/res/layout/activity_genre.xml" value="0.20416666666666666" />
         <entry key="..\:/GitHub/ProyectoFarmacos/app/src/main/res/layout/activity_name_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/ProyectoFarmacos/app/src/main/res/layout/activity_password_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/ProyectoFarmacos/app/src/main/res/layout/activity_treatment_place_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/ProyectoFarmacos/app/src/main/res/layout/activity_typer_register.xml" value="0.20416666666666666" />
         <entry key="..\:/Project/ProyectoFarmacos/app/src/main/res/drawable/bg_menu.xml" value="0.246" />
         <entry key="..\:/Project/ProyectoFarmacos/app/src/main/res/drawable/circle.xml" value="0.1495" />
         <entry key="..\:/Project/ProyectoFarmacos/app/src/main/res/drawable/roundstyle.xml" value="0.2265" />
