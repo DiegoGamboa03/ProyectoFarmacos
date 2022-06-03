@@ -17,13 +17,13 @@ class treatmentPlaceRegisterActivity : AppCompatActivity() {
     }
 
     fun clickNextButton(view: View) {
-        var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
+        //var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
 
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
-            paciente.hospital = findViewById<EditText>(R.id.editTextTextPersonName).toString()
+           // paciente.hospital = findViewById<EditText>(R.id.editTextTextPersonName).toString()
             val intent = Intent(this, PasswordRegisterActivity::class.java)
-            intent.putExtra("paciente",paciente)
+            //intent.putExtra("paciente",paciente)
             startActivity(intent)
         }
 

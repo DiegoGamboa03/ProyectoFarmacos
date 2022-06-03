@@ -20,7 +20,7 @@ class typerRegisterActivity : AppCompatActivity() {
         buttonClick.setOnClickListener {
             val intent = Intent(this, nameRegisterActivity::class.java)
             //Mandamos el tipo de usuario (Paciente o doctor) a la siguiente activity
-            intent.putExtra("UserType",spinner.selectedItem.toString())
+            //intent.putExtra("UserType",spinner.selectedItem.toString())
             startActivity(intent)
         }
 

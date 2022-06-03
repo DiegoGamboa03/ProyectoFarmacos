@@ -16,12 +16,12 @@ class birthdateRegisterActivity : AppCompatActivity() {
     }
 
     fun clickNextButton(view: View) {
-        var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
+       // var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
-            paciente.fechaNac = findViewById<EditText>(R.id.editTextDate).toString()
+          //  paciente.fechaNac = findViewById<EditText>(R.id.editTextDate).toString()
             val intent = Intent(this, directionRegisterActivity::class.java)
-            intent.putExtra("paciente",paciente)
+            //intent.putExtra("paciente",paciente)
 
             startActivity(intent)
         }

@@ -16,13 +16,13 @@ class directionRegisterActivity : AppCompatActivity() {
     }
 
     fun clickNextButton(view: View) {
-        var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
+       // var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
-            paciente.provincia = findViewById<EditText>(R.id.editTextProvince).toString()
-            paciente.ciudad = findViewById<EditText>(R.id.editTextCity).toString()
+           /* paciente.provincia = findViewById<EditText>(R.id.editTextProvince).toString()
+            paciente.ciudad = findViewById<EditText>(R.id.editTextCity).toString()*/
             val intent = Intent(this, treatmentPlaceRegisterActivity::class.java)
-            intent.putExtra("paciente",paciente)
+            //intent.putExtra("paciente",paciente)
 
             startActivity(intent)
         }

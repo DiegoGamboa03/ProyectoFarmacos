@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
-import com.example.pharmacy.AppDataBase
 import com.example.pharmacy.MainActivity
 import com.example.pharmacy.Pacientes
 import com.example.pharmacy.R
@@ -20,18 +19,18 @@ class PasswordRegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_password_register)
     }
 
-    val database = AppDataBase.getDataBase(this)
+    //val database = AppDataBase.getDataBase(this)
     fun clickNextButton(view: View) {
-        var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
+        //var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
 
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
-            paciente.password = findViewById<EditText>(R.id.editTextSpeciality).toString()
+           // paciente.password = findViewById<EditText>(R.id.editTextSpeciality).toString()
             val intent = Intent(this, MainActivity::class.java)
 
-            CoroutineScope(Dispatchers.IO).launch {
+           /* CoroutineScope(Dispatchers.IO).launch {
                 database.pacientes().insertAll(paciente)
-            }
+            }*/
             startActivity(intent)
         }
 

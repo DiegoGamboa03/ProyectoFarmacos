@@ -16,15 +16,16 @@ class genreActivity : AppCompatActivity() {
     }
 
     fun clickNextButton(view: View) {
-        var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
+        //var paciente: Pacientes = intent.getSerializableExtra("paciente") as Pacientes
         val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
         buttonClick.setOnClickListener {
-            if(findViewById<Spinner>(R.id.spinnerGenre).selectedItem.toString().equals("Masculino")){
+          /*  if(findViewById<Spinner>(R.id.spinnerGenre).selectedItem.toString().equals("Masculino")){
                 paciente.sexo = 'M'
             }else{
                 paciente.sexo = 'F'
-            }
+            }*/
             val intent = Intent(this, birthdateRegisterActivity::class.java)
+            //intent.putExtra("paciente",paciente)
             startActivity(intent)
         }
 

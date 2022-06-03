@@ -27,18 +27,18 @@ class nameRegisterActivity : AppCompatActivity() {
             val buttonClick = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buttonNext)
             buttonClick.setOnClickListener {
                 /*-----Datos de la BD-------*/
+                /*val cedula =  findViewById<EditText>(R.id.editTextCedula).toString()
+               val nombre1 = findViewById<EditText>(R.id.editTextName2).toString()
+               val nombre2 = findVi ewById<EditText>(R.id.editTextSecondText).toString()
+               val apellido1 = findViewById<EditText>(R.id.editTextLastName).toString()
+               val apellido2 = findViewById<EditText>(R.id.editTextSecondSurname).toString()
 
+               val paciente = Pacientes("",nombre1,nombre2,apellido1,apellido2,
+                   0,' ',"","","","",cedula)
+               intent.putExtra("paciente",paciente)*/
                 val intent = Intent(this, genreActivity::class.java)
 
-                val cedula =  findViewById<EditText>(R.id.editTextCedula).toString()
-                val nombre1 = findViewById<EditText>(R.id.editTextName2).toString()
-                val nombre2 = findViewById<EditText>(R.id.editTextSecondText).toString()
-                val apellido1 = findViewById<EditText>(R.id.editTextLastName).toString()
-                val apellido2 = findViewById<EditText>(R.id.editTextSecondSurname).toString()
 
-                val paciente = Pacientes("",nombre1,nombre2,apellido1,apellido2,
-                    0,' ',"","","","",cedula)
-                intent.putExtra("paciente",paciente)
                 startActivity(intent)
             }
         }else{//En caso de ser doctor
